@@ -8,7 +8,5 @@ import java.util.List;
 
 @RepositoryRestResource(collectionResourceRel = "people", path = "people")
 public interface PersonRepository extends MongoRepository<Person_impl, String> {
-
     List<Person_impl> findByLastName(@Param("name") String name);
-
 }
